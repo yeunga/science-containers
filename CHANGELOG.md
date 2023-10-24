@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/opencadc/scicon/compare/v0.4.0...v0.4.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **build:** fixed ref issue in docker build ([d971218](https://github.com/opencadc/scicon/commit/d971218673fd62ff139db6fd7fc2fa1aeea138f8))
+
 ## [0.4.0](https://github.com/opencadc/scicon/compare/v0.3.0...v0.4.0) (2023-10-24)
 
 
