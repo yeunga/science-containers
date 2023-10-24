@@ -1,0 +1,86 @@
+site_name: Science Containers
+site_url: https://opencadc.github.io/scicon/
+site_author: CANFAR
+site_description: Science Containers for CANFAR Science Platform
+repo_url: https://github.com/opencadc/scicon/
+repo_name: opencadc/scicon
+edit_uri: blob/main/docs/
+copyright: Copyright &copy; 2023 CANFAR
+remote_branch: gh-pages
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  language: en
+  icon:
+    repo: fontawesome/brands/github-alt
+    edit: material/pencil-box
+    view: material/eye-outline
+  features:
+    - tabs
+    - instant
+    - content.action.edit
+    - offline
+
+plugins:
+  - search
+  - mkdocstrings
+  - git-revision-date-localized:
+        type: date
+        fallback_to_build_date: true
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums_style: pymdownx.inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Scicon: index.md
+  - Help Page: help.md
