@@ -1,11 +1,11 @@
-site_name: Science Containers
-site_url: https://opencadc.github.io/scicon/
-site_author: CANFAR
-site_description: Science Containers for CANFAR Science Platform
-repo_url: https://github.com/opencadc/scicon/
-repo_name: opencadc/scicon
+site_name: Skaha API
+site_url: https://chimefrb.github.io/skaha/
+site_author: Shiny Brar
+site_description: Python Client for Skaha Science Platform
+repo_url: https://github.com/chimefrb/skaha/
+repo_name: chimefrb/skaha
 edit_uri: blob/main/docs/
-copyright: Copyright &copy; 2023 CANFAR
+copyright: Copyright &copy; 2016 - 2023 CHIME/FRB Collaboration
 remote_branch: gh-pages
 
 theme:
@@ -82,5 +82,11 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Scicon: index.md
-  - Help Page: help.md
+  - Skaha: index.md
+  - Get Started: get-started.md
+  - Examples: examples.md
+  - API Reference:
+    - Session: session.md
+    - Images: images.md
+    - Context: context.md
+    - Client: client.md
