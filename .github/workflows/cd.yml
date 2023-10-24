@@ -38,7 +38,6 @@ jobs:
     if : ${{ needs.releaseer.outputs.release_created }}
     strategy:
       matrix:
-        info: ${{ needs.releaseer.outputs.releases }}
         python-version: [3.9]
     steps:
       - 
@@ -51,14 +50,17 @@ jobs:
         id: metadata
         run: |
           echo "Creating Release Metadata"
-          REGISTRY="images.canfar.net/"
-          echo REGISTRY=${REGISTRY} >> $GITHUB_OUTPUT
-          IMAGE="canfar/base"
-          echo IMAGE=${IMAGE} >> $GITHUB_OUTPUT
-          TAG=${{ matrix.info.tag_name }}
-          echo TAG=${TAG} >> $GITHUB_OUTPUT
-          echo IMAGE_LATEST=${REGISTRY}${IMAGE}:latest >> $GITHUB_OUTPUT
-          echo IMAGE_TAGGED=${REGISTRY}${IMAGE}:${TAG} >> $GITHUB_OUTPUT
+          echo "Release Ver: ${{ needs.releaseer.outputs.releases }}"
+          echo "Release Tag: ${{ needs.releaseer.outputs.tag_name }}"
+
+      # REGISTRY="images.canfar.net/"
+      # echo REGISTRY=${REGISTRY} >> $GITHUB_OUTPUT
+      # IMAGE="canfar/base"
+      # echo IMAGE=${IMAGE} >> $GITHUB_OUTPUT
+      # TAG=${{ matrix.info.tag_name }}
+      # echo TAG=${TAG} >> $GITHUB_OUTPUT
+      # echo IMAGE_LATEST=${REGISTRY}${IMAGE}:latest >> $GITHUB_OUTPUT
+      # echo IMAGE_TAGGED=${REGISTRY}${IMAGE}:${TAG} >> $GITHUB_OUTPUT
       # - 
       #   name: Setup Docker Buildx Environment
       #   if: ${{ steps.release-please.outputs.release_created }}
