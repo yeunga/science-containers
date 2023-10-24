@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/opencadc/scicon/compare/v0.2.0...v0.2.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **Github-Actions:** working on deployment ([d19c775](https://github.com/opencadc/scicon/commit/d19c775de05eeb51931e68f72930a9b89c441303))
+
 ## [0.2.0](https://github.com/opencadc/scicon/compare/v0.1.0...v0.2.0) (2023-10-24)
 
 
