@@ -1,0 +1,25 @@
+name: Continous Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Create release
+        id: release-please
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: python
+          package-name: scicon
+      -
+        name: Checkout
+        if: ${{ steps.release-please.outputs.release_created }}
+        uses: actions/checkout@v2
+        run: |
+          echo "The release branch is ${{ steps.release-please.outputs.release_branch }}"
+          echo "Release Version: ${{ steps.release-please.outputs.tag_name }}"
