@@ -19,7 +19,7 @@ jobs:
       -
         name: Checkout
         if: ${{ steps.release-please.outputs.release_created }}
-        uses: actions/checkout@v2
+        shell: bash
         run: |
           echo "The release branch is ${{ steps.release-please.outputs.release_branch }}"
           echo "Release Version: ${{ steps.release-please.outputs.tag_name }}"
