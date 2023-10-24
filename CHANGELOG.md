@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/opencadc/scicon/compare/v0.3.0...v0.4.0) (2023-10-24)
+
+
+### Features
+
+* **build:** add quotes around python versions ([a64ef9b](https://github.com/opencadc/scicon/commit/a64ef9be5945c9cba1e0634317aa6503d2e06392))
+
 ## [0.3.0](https://github.com/opencadc/scicon/compare/v0.2.2...v0.3.0) (2023-10-24)
 
 
