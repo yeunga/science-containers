@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/opencadc/scicon/compare/v0.2.2...v0.3.0) (2023-10-24)
+
+
+### Features
+
+* **Github-Actions:** added deloyment action for base container ([32df4a2](https://github.com/opencadc/scicon/commit/32df4a2cb4183ba57996524f2735f45e5c9d9b20))
+
+
+### Documentation
+
+* **docs:** root README.md ([68ea7d3](https://github.com/opencadc/scicon/commit/68ea7d3a20e80dac9ffe0c689b7e4e11a2083dff))
+* **docs:** root README.md ([c31227c](https://github.com/opencadc/scicon/commit/c31227c998cafbd7f4fe1af103989ccc3c1abe20))
+
 ## [0.2.2](https://github.com/opencadc/scicon/compare/v0.2.1...v0.2.2) (2023-10-24)
 
 
