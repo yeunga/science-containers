@@ -59,8 +59,8 @@ jobs:
           echo FLAVOR=${FLAVOR} >> $GITHUB_OUTPUT
           TAG=${{ needs.releaseer.outputs.tag_name }}
           echo TAG=${TAG} >> $GITHUB_OUTPUT
-          echo IMAGE_LATEST=${REGISTRY}${IMAGE}-{FLAVOR}:latest >> $GITHUB_OUTPUT
-          echo IMAGE_TAGGED=${REGISTRY}${IMAGE}-{FLAVOR}:${TAG} >> $GITHUB_OUTPUT
+          echo IMAGE_LATEST=${REGISTRY}${IMAGE}-${FLAVOR}:latest >> $GITHUB_OUTPUT
+          echo IMAGE_TAGGED=${REGISTRY}${IMAGE}-${FLAVOR}:${TAG} >> $GITHUB_OUTPUT
       -
         name: Setup Docker Buildx Environment
         id: buildx
