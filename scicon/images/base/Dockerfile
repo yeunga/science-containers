@@ -22,6 +22,8 @@ RUN set -ex \
         wget \
         zsh \
         tcsh \
+        ca-certificates \
+    && update-ca-certificates \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* \
@@ -30,21 +32,19 @@ RUN set -ex \
     && rm -rf /usr/share/man \
     && rm -rf /usr/share/doc \
     && rm -rf /usr/share/doc-base \
-    && rm -rf ~/.cache 
+    && rm -rf ~/.cache
 
 ADD nsswitch.conf /etc/
 
-# install micromamba and initialize
+# Mircomamba Installation
 ARG PYTHON_VERSION
-
 ENV CONDA_DIR=/opt/conda
 ENV PATH="${CONDA_DIR}/bin:${PATH}"
 
 COPY condarc "${CONDA_DIR}/.condarc"
-
-RUN set -x && \
-    curl -Ls https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba && \
-    ./bin/micromamba install \
+COPY --from=mambaorg/micromamba:latest /usr/bin/micromamba ./bin/micromamba
+RUN set -ex \
+    && ./bin/micromamba install \
         --root-prefix="${CONDA_DIR}" \
         --prefix="${CONDA_DIR}" \
         --yes \
@@ -60,4 +60,4 @@ RUN ln -s ${CONDA_DIR}/etc/profile.d/conda.sh /etc/profile.d/conda.sh
 #     pip \
 #     conda-libmamba-solver \
 #     pip-tools \
-#     && conda clean --all --quiet --force --yes 
+#     && conda clean --all --quiet --force --yes
