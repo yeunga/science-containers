@@ -82,5 +82,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Scicon: index.md
-  - Help Page: help.md
+  - scicon: index.md
+  - containers: containers.md
+  - permissions: permissions.md
+  - headless: headless.md
+  - faq: faq.md
+  - todo: todo.md
