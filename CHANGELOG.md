@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/opencadc/scicon/compare/v0.1.0...v0.2.0) (2023-10-24)
+
+
+### Features
+
+* **Github-Actions:** added a new deployment step with matrix capabilties ([1d2b711](https://github.com/opencadc/scicon/commit/1d2b71185d9e757a7fc7588c2e375704514d1522))
+
+
+### Documentation
+
+* **docs:** initial port from science-containers ([af7abaf](https://github.com/opencadc/scicon/commit/af7abaf9276c51b2b6e6a748f0ffc9a179202932))
+
 ## 0.1.0 (2023-10-24)
 
 
