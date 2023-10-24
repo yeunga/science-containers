@@ -30,6 +30,7 @@ jobs:
       release_created: ${{ steps.release-please.outputs.releases_created }}
       releases: ${{ steps.release-please.outputs.releases }}
       tag_name: ${{ steps.release-please.outputs.tag_name }}
+      
   
   build:
     runs-on: ubuntu-latest
@@ -37,7 +38,7 @@ jobs:
     if : ${{ needs.releaseer.outputs.release_created }}
     strategy:
       matrix:
-        info: ${{ fromJson(needs.releaseer.outputs.releases) }}
+        info: ${{ needs.releaseer.outputs.releases }}
         python-version: [3.9]
     steps:
       - 
