@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/opencadc/scicon/compare/v0.4.1...v0.4.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* **docs:** fixed the spelling of ubuntu ([ff272b3](https://github.com/opencadc/scicon/commit/ff272b3d0033a970d7d8dce8b4d3417732953edc))
+
 ## [0.4.1](https://github.com/opencadc/scicon/compare/v0.4.0...v0.4.1) (2023-10-24)
 
 
