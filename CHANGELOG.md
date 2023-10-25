@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.4.2](https://github.com/opencadc/scicon/compare/v0.4.1...v0.4.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* **docs:** fixed the spelling of ubuntu ([ff272b3](https://github.com/opencadc/scicon/commit/ff272b3d0033a970d7d8dce8b4d3417732953edc))
+
+## [0.4.1](https://github.com/opencadc/scicon/compare/v0.4.0...v0.4.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **build:** fixed ref issue in docker build ([d971218](https://github.com/opencadc/scicon/commit/d971218673fd62ff139db6fd7fc2fa1aeea138f8))
+
+## [0.4.0](https://github.com/opencadc/scicon/compare/v0.3.0...v0.4.0) (2023-10-24)
+
+
+### Features
+
+* **build:** add quotes around python versions ([a64ef9b](https://github.com/opencadc/scicon/commit/a64ef9be5945c9cba1e0634317aa6503d2e06392))
+
+## [0.3.0](https://github.com/opencadc/scicon/compare/v0.2.2...v0.3.0) (2023-10-24)
+
+
+### Features
+
+* **Github-Actions:** added deloyment action for base container ([32df4a2](https://github.com/opencadc/scicon/commit/32df4a2cb4183ba57996524f2735f45e5c9d9b20))
+
+
+### Documentation
+
+* **docs:** root README.md ([68ea7d3](https://github.com/opencadc/scicon/commit/68ea7d3a20e80dac9ffe0c689b7e4e11a2083dff))
+* **docs:** root README.md ([c31227c](https://github.com/opencadc/scicon/commit/c31227c998cafbd7f4fe1af103989ccc3c1abe20))
+
 ## [0.2.2](https://github.com/opencadc/scicon/compare/v0.2.1...v0.2.2) (2023-10-24)
 
 

@@ -38,7 +38,7 @@ jobs:
     if : ${{ needs.releaseer.outputs.release_created }}
     strategy:
       matrix:
-        python-version: [3.9, 3.10, 3.11, 3.12]
+        python-version: ['3.9', '3.10', '3.11', '3.12']
     steps:
       -
         name: Checkout Repository
@@ -59,8 +59,8 @@ jobs:
           echo FLAVOR=${FLAVOR} >> $GITHUB_OUTPUT
           TAG=${{ needs.releaseer.outputs.tag_name }}
           echo TAG=${TAG} >> $GITHUB_OUTPUT
-          echo IMAGE_LATEST=${REGISTRY}${IMAGE}-{FLAVOR}:latest >> $GITHUB_OUTPUT
-          echo IMAGE_TAGGED=${REGISTRY}${IMAGE}-{FLAVOR}:${TAG} >> $GITHUB_OUTPUT
+          echo IMAGE_LATEST=${REGISTRY}${IMAGE}-${FLAVOR}:latest >> $GITHUB_OUTPUT
+          echo IMAGE_TAGGED=${REGISTRY}${IMAGE}-${FLAVOR}:${TAG} >> $GITHUB_OUTPUT
       -
         name: Setup Docker Buildx Environment
         id: buildx
