@@ -82,9 +82,11 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - scicon: index.md
-  - containers: containers.md
-  - permissions: permissions.md
-  - headless: headless.md
-  - faq: faq.md
-  - todo: todo.md
+  - CANFAR: index.md
+  - Publishing Containers: publishing.md
+  - Permissions: permissions.md
+  - CANFAR Containers: science-containers.md
+  - Headless: headless.md
+  - Infrastructure: science-platform.md
+  - Portal: science-portal.md
+  - FAQ: faq.md
