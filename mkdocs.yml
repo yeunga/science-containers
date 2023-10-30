@@ -1,7 +1,7 @@
-site_name: Science Containers
+site_name: CANFAR Science Platform
 site_url: https://opencadc.github.io/scicon/
 site_author: CANFAR
-site_description: Science Containers for CANFAR Science Platform
+site_description: Documentation and Science Containers for the CANFAR Science Platform
 repo_url: https://github.com/opencadc/scicon/
 repo_name: opencadc/scicon
 edit_uri: blob/main/docs/
