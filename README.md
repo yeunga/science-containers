@@ -1,7 +1,10 @@
-# Science Containers
+# CANFAR Science Containers
 
-This is the git repository for docker images run on the CANFAR Science Platform.
+This is the repository for docker containers that are run on the [CANFAR Science Platform](https://www.canfar.net)
 
-Official documentation is here: [Official Documentation](https://www.opencadc.org/scicon/)
+The official CANFAR User Documentation can be found at: [https://www.opencadc.org/scicon/](https://www.opencadc.org/scicon/)
 
-Documention in the above link is generated using MkDocs from the markdown files in the [docs directory](docs).
+### Platform Infrastructure
+The repository for the platform service infrastructure and deployment configuration is at:  [https://github.com/opencadc/science-platform](https://github.com/opencadc/science-platform)
+
+[<img src="canfar-logo.png" height="200" />](https://www.opencadc.org/scicon/)
