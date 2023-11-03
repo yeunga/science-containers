@@ -19,7 +19,7 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: python
-          package-name: scicon
+          package-name: science-containers
       -
         name: Print Release Info
         if: ${{ steps.release-please.outputs.release_created }}
@@ -79,8 +79,8 @@ jobs:
         uses: docker/build-push-action@v3
         id: build-push-production
         with:
-          context: scicon/images/base
-          file: scicon/images/base/Dockerfile
+          context: science-containers/images/base
+          file: science-containers/images/base/Dockerfile
           platforms: linux/amd64
           build-args:
             PYTHON_VERSION=${{ matrix.python-version }}
