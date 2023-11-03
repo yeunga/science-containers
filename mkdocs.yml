@@ -1,9 +1,9 @@
 site_name: CANFAR Science Platform
-site_url: https://opencadc.github.io/scicon/
+site_url: https://opencadc.github.io/science-containers/
 site_author: CANFAR
 site_description: Documentation and Science Containers for the CANFAR Science Platform
-repo_url: https://github.com/opencadc/scicon/
-repo_name: opencadc/scicon
+repo_url: https://github.com/opencadc/science-containers/
+repo_name: opencadc/science-containers
 edit_uri: blob/main/docs/
 copyright: Copyright &copy; 2023 CANFAR
 remote_branch: gh-pages
