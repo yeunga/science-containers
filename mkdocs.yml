@@ -35,6 +35,8 @@ theme:
     - instant
     - content.action.edit
     - offline
+    - navigation.sections
+    - navigation.expand
 
 plugins:
   - search
@@ -82,11 +84,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Introduction: index.md
-  - Publishing Containers: publishing.md
-  - Permissions: permissions.md
-  - CANFAR Containers: science-containers.md
-  - Headless: headless.md
-  - Infrastructure: science-platform.md
-  - Portal: science-portal.md
-  - FAQ: faq.md
+  - Seciton:
+    - general/index.md
+  - Section:
+    - complete/index.md
+    - Publishing Containers: complete/publishing.md
+    - Permissions: complete/permissions.md
+    - CANFAR Containers: complete/science-containers.md
+    - Headless: complete/headless.md
+    - Infrastructure: complete/science-platform.md
+    - Portal: complete/science-portal.md
+    - FAQ: complete/faq.md
