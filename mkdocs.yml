@@ -95,27 +95,28 @@ nav:
       - Launch Desktop: general/NewUser/LaunchDesktop.md
       - Launch CARTA: general/NewUser/LaunchCARTA.md
       - Launch Notebook: general/NewUser/LaunchNotebook.md
-  - In-Depth Documentation:
-    - Publishing Containers: complete/publishing.md
-    - Permissions: complete/permissions.md
-    - CANFAR Containers: complete/science-containers.md
-    - Headless: complete/headless.md
-    - Infrastructure: complete/science-platform.md
-    - Portal: complete/science-portal.md
-    - FAQ: complete/faq.md
-  - Tutorials:
-    - File Transfers: general/General_tools/File_transfers
-    - Using Web Storage: general/General_tools/Using_webstorage
-    - Using vostools: general/General_tools/Using_vostools
-    - Using sshfs: general/General_tools/Using_sshfs
-    - Group Management: general/General_tools/Group_management
-    - Transfering to Notebooks: general/Notebook/transfer_file
-  - Tips and Tricks:
-    - Using the desktop clipboard: general/TipsTricks/Using_clipboard
-    - Increasing desktop font : general/TipsTricks/Increase_font
-    - URL upload/download: general/TipsTricks/Direct_url
-  - ALMA Tutorials (Desktop Sessions):
-    - Starting CASA: general/ALMA_Desktop/start_casa
-    - Downloading from the ALMA archive (browser): general/ALMA_Desktop/archive_download
-    - Downloading from the ALMA archive (script): general/ALMA_Desktop/archive_script_download
-    - Example of reducing image data: general/ALMA_Desktop/typical_reduction
+    - In-Depth Documentation:
+      - Publishing Containers: complete/publishing.md
+      - Permissions: complete/permissions.md
+      - CANFAR Containers: complete/science-containers.md
+      - Headless: complete/headless.md
+      - Infrastructure: complete/science-platform.md
+      - Portal: complete/science-portal.md
+  - Tutorials and Help:
+    - General Tutorials:
+      - File Transfers: general/General_tools/File_transfers
+      - Using Web Storage: general/General_tools/Using_webstorage
+      - Using vostools: general/General_tools/Using_vostools
+      - Using sshfs: general/General_tools/Using_sshfs
+      - Group Management: general/General_tools/Group_management
+      - Transfering to Notebooks: general/Notebook/transfer_file
+    - Tips and Tricks:
+      - Using the desktop clipboard: general/TipsTricks/Using_clipboard
+      - Increasing desktop font : general/TipsTricks/Increase_font
+      - URL upload/download: general/TipsTricks/Direct_url
+    - ALMA Tutorials (Desktop Sessions):
+      - Starting CASA: general/ALMA_Desktop/start_casa
+      - Downloading from the ALMA archive (browser): general/ALMA_Desktop/archive_download
+      - Downloading from the ALMA archive (script): general/ALMA_Desktop/archive_script_download
+      - Example of reducing image data: general/ALMA_Desktop/typical_reduction
+  - FAQ: complete/faq.md
