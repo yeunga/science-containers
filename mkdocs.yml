@@ -84,15 +84,17 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Section:
+  - complete/index.md
+  - General User Documentation:
     - general/index.md
-    - New User / Overview: general/NewUser/Overview.md
-    - New User / Login: general/NewUser/Login.md
-    - New User / Project Space: general/NewUser/ProjectSpace.md
-    - New User / Launch Desktop: general/NewUser/LaunchDesktop.md
-    - New User / Launch CARTA: general/NewUser/LaunchCARTA.md
-    - New User / Launch Notebook: general/NewUser/LaunchNotebook.md
-  - Section:
+    - New User:
+      - general/NewUser/Overview.md
+      - Login: general/NewUser/Login.md
+      - Project Space: general/NewUser/ProjectSpace.md
+      - Launch Desktop: general/NewUser/LaunchDesktop.md
+      - Launch CARTA: general/NewUser/LaunchCARTA.md
+      - Launch Notebook: general/NewUser/LaunchNotebook.md
+  - Complete User Documentation:
     - complete/index.md
     - Publishing Containers: complete/publishing.md
     - Permissions: complete/permissions.md
