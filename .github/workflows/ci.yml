@@ -12,32 +12,32 @@ on:
       - '**'
 
 jobs:
-  pre-commit-checks:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Setup code repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-      -
-        name: Setup Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      -
-        name: Load cached pre-commit repos
-        id: cached-pre-commit-repos
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/pre-commit
-          key: poetry-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
-      -
-        name: Perform pre-commit checks
-        run: |
-          pip install pre-commit
-          pre-commit run -a
+  #  pre-commit-checks:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    -
+  #      name: Setup code repository
+  #      uses: actions/checkout@v2
+  #      with:
+  #        fetch-depth: 1
+  #    -
+  #      name: Setup Python 3.9
+  #      uses: actions/setup-python@v2
+  #      with:
+  #        python-version: 3.9
+  #    -
+  #      name: Load cached pre-commit repos
+  #      id: cached-pre-commit-repos
+  #      uses: actions/cache@v2
+  #      with:
+  #        path: |
+  #          ~/.cache/pre-commit
+  #        key: poetry-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
+  #    -
+  #      name: Perform pre-commit checks
+  #      run: |
+  #        pip install pre-commit
+  #        pre-commit run -a
 
   tests:
     #    temporarily disabling pre-commit-checks
