@@ -40,7 +40,8 @@ jobs:
           pre-commit run -a
 
   tests:
-    needs: pre-commit-checks
+    #    temporarily disabling pre-commit-checks
+    #    needs: pre-commit-checks
     runs-on: ${{ matrix.os }}
     defaults:
       run:
