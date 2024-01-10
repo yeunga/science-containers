@@ -5,6 +5,7 @@ RUN apt update && \
     add-apt-repository ppa:cartavis-team/carta && \
     apt update && \
     apt install -y carta
+RUN apt autoremove --purge --yes --quiet
 
 RUN mkdir /carta
 WORKDIR /carta

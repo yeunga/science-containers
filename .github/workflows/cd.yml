@@ -39,6 +39,7 @@ jobs:
     strategy:
       matrix:
         python-version: ['3.9', '3.10', '3.11', '3.12']
+        image: ['astroconda-terminal', 'base`', 'carta', 'casa/version-3.4-4.2', 'casa/version-4.3-4.3', 'casa/version-4.5-5.8', 'casa/version-6.1-6.4', 'casa/version-6.4-plus', 'desktop', 'ds9', 'ds9-terminal', 'lsst-science-pipeline', 'nifs', 'niri', 'notebook/casa', 'notebook/lsst', 'notebook/scipy', 'phosim', 'phosphoros', 'pluto', 'topcat', 'topcat-terminal']
     steps:
       -
         name: Checkout Repository
@@ -53,7 +54,7 @@ jobs:
           echo "Release Tag: ${{ needs.releaseer.outputs.tag_name }}"
           REGISTRY="images.canfar.net/"
           echo REGISTRY=${REGISTRY} >> $GITHUB_OUTPUT
-          IMAGE="canfar/base"
+          IMAGE="canfar/${{ matrix.image }}"
           echo IMAGE=${IMAGE} >> $GITHUB_OUTPUT
           FLAVOR=${{ matrix.python-version }}
           echo FLAVOR=${FLAVOR} >> $GITHUB_OUTPUT
@@ -79,8 +80,8 @@ jobs:
         uses: docker/build-push-action@v3
         id: build-push-production
         with:
-          context: science-containers/images/base
-          file: science-containers/images/base/Dockerfile
+          context: science-containers/Dockerfiles/${{ matrix.image }}
+          file: science-containers/Dockerfiles/${{ matrix.image }}/Dockerfile
           platforms: linux/amd64
           build-args:
             PYTHON_VERSION=${{ matrix.python-version }}
