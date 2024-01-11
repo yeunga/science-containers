@@ -39,7 +39,7 @@ jobs:
     strategy:
       matrix:
         python-version: ['3.9', '3.10', '3.11', '3.12']
-        image: ['astroconda-terminal', 'base', 'carta', 'desktop', 'ds9', 'ds9-terminal', 'lsst-science-pipeline', 'nifs', 'niri', 'notebook/casa', 'notebook/lsst', 'notebook/scipy', 'phosim', 'phosphoros', 'pluto', 'topcat', 'topcat-terminal']
+        image: ['astroconda-terminal', 'base', 'carta', 'desktop', 'ds9', 'ds9-terminal', 'lsst-science-pipeline', 'nifs', 'niri', 'phosim', 'phosphoros', 'pluto', 'topcat', 'topcat-terminal']
     steps:
       -
         name: Checkout Repository
